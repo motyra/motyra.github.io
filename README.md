@@ -1,2 +1,0 @@
-# motyra.github.io
-hsjkfksdhvbndhvbkesdjnvlakjfbds
