@@ -177,7 +177,7 @@
           font-size: 3rem;
           font-weight: 700;
           color: #a5122a;
-          margin-bottom: 0.4em;
+          margin-bottom: 1em;
           animation: none;
         }
 
@@ -186,7 +186,7 @@
           font-size: 3rem;
           font-weight: 700;
           color: #a5122a;
-          margin-bottom: 0.4em;
+          margin-bottom: 1em;
           animation: none;
         }
         
@@ -196,7 +196,7 @@
           font-size: 2.5rem;
           font-weight: 700;
           color: #a5122a;
-          margin-bottom: 0.4em;
+          margin-bottom: 1em;
           animation: none;
         }
 
@@ -232,28 +232,16 @@
             position: relative;
             overflow: visible;
             font-size: large;
+            margin-bottom: 10px;
         }
 
-        .donation-card > summary {
+        .donation-card summary {
             list-style: none;
             cursor: pointer;
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             color: var(--blood-red);
         }
-
-        .donation-card > :not(summary) {
-              position: absolute;
-              top: calc(100% + 10px);
-              left: 0;
-              width: 100%;
-              background: white;
-              padding: 20px;
-              border-radius: 20px;
-              box-shadow: 0 15px 40px rgba(0,0,0,.15);
-              z-index: 50;
-          }
-
 
         .donation-card:hover {
             transform: scale(1.05) translateY(-5px);
@@ -328,7 +316,7 @@
             background: white;
         }
 
-        .donation-type-select {
+        .donation-type-select{
           font-family: 'Inter', sans-serif;
           color: #333;
           margin-bottom: 10px;
@@ -362,8 +350,9 @@
             box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.1);
         }
 
-        .calculate-btn {
-            width: 100%;
+        .calculate-btn, .calendar-btn{
+            display: grid;
+            width: 50%;
             padding: 18px;
             background: var(--blood-red);
             color: white;
@@ -373,6 +362,14 @@
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
+            place-self: center;
+            margin: 10px 10px 0 0;
+        }
+
+        .calendar-btn{
+            background: #4285F4;
+            margin: 20px 10px 3px 0;
+            place-self: unset;   
         }
 
         .calculate-btn:hover {
@@ -503,6 +500,12 @@
             font-size: 1.2rem;
             position: relative;
             overflow: hidden;
+        }
+        
+        .map-placeholder iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
         }
 
         .map-placeholder::before {
