@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Календар Донора | Збережи життя</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script src="./main.js"></script>
+    <section class="hero">
+        <div class="blood-drop" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="blood-drop" style="left: 25%; animation-delay: 2s;"></div>
+        <div class="blood-drop" style="left: 40%; animation-delay: 4s;"></div>
+        <div class="blood-drop" style="left: 60%; animation-delay: 1s;"></div>
+        <div class="blood-drop" style="left: 75%; animation-delay: 3s;"></div>
+        <div class="blood-drop" style="left: 90%; animation-delay: 5s;"></div>
+
+        <div class="hero-content">
+            <h1>Календар Донора</h1>
+            <p class="hero-subtitle">Твоя кров рятує життя. Ми нагадаємо, коли час здавати знову.</p>
+            <a href="#calculator" class="cta-button">Розрахувати наступну дату</a>
+        </div>
+
+        <div class="scroll-indicator">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13.5L7.5 11l1.42-1.41L12 12.67l3.08-3.08L16.5 11 12 15.5z"/>
+            </svg>
+        </div>
+    </section>
+
+
+    <button id="notifybyid">Включить уведомление</button>
+    <script src="./script.js"></script>
+    <!-- Types of Donation -->
+    <section class="section">
+        <h2 class="section-title">Типи донації</h2>
+        <div class="donation-types">
+            <div class="donation-card">
+                <h3>Цільна кров</h3>
+                <div class="wait-time">⏱ Чекати: 60 днів</div>
+                <p>Найпоширеніший тип донації. Забирається приблизно 450 мл крові, яка потім розділяється на компоненти. Процедура займає 10-15 хвилин.</p>
+            </div>
+
+            <div class="donation-card">
+                <h3>Плазма</h3>
+                <div class="wait-time">⏱ Чекати: 14 днів</div>
+                <p>Донація рідкої частини крові. Використовується для лікування опіків, шоку та інших станів. Процедура займає близько 40 хвилин.</p>
+            </div>
+
+            <div class="donation-card">
+                <h3>Тромбоцити</h3>
+                <div class="wait-time">⏱ Чекати: 14 днів</div>
+                <p>Клітини, що допомагають зупинити кровотечу. Критично важливі для онкохворих. Процедура займає 1-2 години.</p>
+            </div>
+
+            <div class="donation-card">
+                <h3>Еритроцити</h3>
+                <div class="wait-time">⏱ Чекати: 120 днів</div>
+                <p>Подвійна донація червоних кров'яних тілець. Допомагає пацієнтам з анемією та крововтратою. Процедура займає 30-40 хвилин.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Calculator -->
+    <section class="section" id="calculator">
+        <div class="calculator">
+            <h3>🩸 Розрахуй наступну дату донації</h3>
+            
+            <div class="form-group">
+                <label for="donationType">Тип донації:</label>
+                <select id="donationType">
+                    <option value="60">Цільна кров (60 днів)</option>
+                    <option value="14">Плазма (14 днів)</option>
+                    <option value="14-platelets">Тромбоцити (14 днів)</option>
+                    <option value="120">Еритроцити (120 днів)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="lastDonation">Дата останньої донації:</label>
+                <input type="date" id="lastDonation" max="">
+            </div>
+
+            <button class="calculate-btn" onclick="calculateNextDate()">Розрахувати</button>
+
+            <div class="result" id="result">
+                <h4>📅 Твоя наступна донація</h4>
+                <div class="next-date" id="nextDate"></div>
+                <p id="resultMessage"></p>
+                <p style="margin-top: 20px; font-style: italic;">💡 Ми надішлемо тобі нагадування за тиждень до дати!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Centers -->
+    <section class="centers-section">
+        <div class="section">
+            <h2 class="section-title">Центри донації поблизу</h2>
+            
+            <div class="map-placeholder">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d85259.35105238578!2d11.511642823079768!3d48.103392592095354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sblutspende!5e0!3m2!1sen!2sde!4v1770747744980!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="centers-grid">
+                <div class="center-card">
+                    <h4>Київський центр крові</h4>
+                    <div class="address">📍 вул. Берлінського, 12, Київ</div>
+                    <div class="phone">📞 +380 44 123 4567</div>
+                    <div class="hours">
+                        <strong>Години роботи:</strong><br>
+                        Пн-Пт: 08:00 - 15:00<br>
+                        Сб: 08:00 - 13:00
+                    </div>
+                </div>
+
+                <div class="center-card">
+                    <h4>Обласний центр служби крові</h4>
+                    <div class="address">📍 просп. Перемоги, 56, Київ</div>
+                    <div class="phone">📞 +380 44 234 5678</div>
+                    <div class="hours">
+                        <strong>Години роботи:</strong><br>
+                        Пн-Пт: 07:30 - 14:30<br>
+                        Сб-Нд: Вихідний
+                    </div>
+                </div>
+
+                <div class="center-card">
+                    <h4>Медичний центр "Життя"</h4>
+                    <div class="address">📍 вул. Хрещатик, 22, Київ</div>
+                    <div class="phone">📞 +380 44 345 6789</div>
+                    <div class="hours">
+                        <strong>Години роботи:</strong><br>
+                        Пн-Сб: 08:00 - 16:00<br>
+                        Нд: 09:00 - 13:00
+                    </div>
+                </div>
+
+                <div class="center-card">
+                    <h4>Станція переливання крові</h4>
+                    <div class="address">📍 вул. Шевченка, 78, Київ</div>
+                    <div class="phone">📞 +380 44 456 7890</div>
+                    <div class="hours">
+                        <strong>Години роботи:</strong><br>
+                        Пн-Пт: 08:00 - 15:00<br>
+                        Сб: 08:30 - 12:30
+                    </div>
+                </div>
+
+                <div class="center-card">
+                    <h4>Клініка здорової крові</h4>
+                    <div class="address">📍 вул. Грушевського, 34, Київ</div>
+                    <div class="phone">📞 +380 44 567 8901</div>
+                    <div class="hours">
+                        <strong>Години роботи:</strong><br>
+                        Щодня: 08:00 - 17:00<br>
+                        Без вихідних
+                    </div>
+                </div>
+
+                <div class="center-card">
+                    <h4>Донорський центр "Надія"</h4>
+                    <div class="address">📍 вул. Саксаганського, 91, Київ</div>
+                    <div class="phone">📞 +380 44 678 9012</div>
+                    <div class="hours">
+                        <strong>Години роботи:</strong><br>
+                        Пн-Пт: 07:00 - 14:00<br>
+                        Сб: 08:00 - 12:00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Разом ми рятуємо життя</h3>
+        <p>Кожна донація може врятувати до трьох життів</p>
+
+        <div class="footer-stats">
+            <div class="stat">
+                <span class="stat-number">1</span>
+                <div class="stat-label">донація = 3 життя</div>
+            </div>
+            <div class="stat">
+                <span class="stat-number">450</span>
+                <div class="stat-label">мл крові за раз</div>
+            </div>
+            <div class="stat">
+                <span class="stat-number">24</span>
+                <div class="stat-label">години до використання</div>
+            </div>
+        </div>
+
+        <p style="margin-top: 40px; opacity: 0.6;">© 2024 Календар Донора. Створено з ❤️ для донорів України</p>
+    </footer>
+</body>
+</html>
