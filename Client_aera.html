@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <title>Donor-Flow | Client Area</title>
     <link rel="stylesheet" href="client.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
     <header class="topbar">
-        <button id="toggleSidebar" class="burger">☰</button>
         <div class="logo"><a href="./main.html">Donor-Flow</a></div>
         <div class="user">
             <span id="username">Користувач</span>
@@ -19,14 +19,14 @@
     </header>
     <div class="tabs">
         <div class="layout">
-            <aside class="sidebar">
-                <button class="tab" data-tab="home">Головна</button>
-                <button class="tab" data-tab="appointments"> Мій запис</button>
-                <button class="tab" data-tab="donations"> Мої донації</button>
-                <button class="tab" data-tab="settings"> Налаштування</button>
+            <aside>
+                <nav class="container">
+                    <li type="none"><button class="tab" data-tab="home">Головна</button></li>
+                    <li type="none"><button class="tab" data-tab="appointments"> Мій запис</button></li>
+                    <li type="none"><button class="tab" data-tab="donations"> Мої донації</button></li>
+                    <li type="none"><button class="tab" data-tab="settings"> Налаштування</button></li>
+                </nav>
             </aside>
-
-            <!-- tabs content -->
         </div>
         <div class="tab-content">
             <section id="home" class="tab-section active">
@@ -40,8 +40,29 @@
             </section>
 
             <section id="donations" class="tab-section">
-                <h2>Мої донації</h2>
-                <p>Історія донацій</p>
+                <p style="margin-left: 10px;">Історія донацій</p>
+                <h2 style="margin-left: 10px;">Статистика</h2>
+                <div class="cards-statistic">
+                    <div class="card">
+                        <h3>Усього донацій</h3>
+                        <p class="value">5</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Цільна кров</h3>
+                        <p class="value">3</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Плазма</h3>
+                        <p class="value">2</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Остання донація</h3>
+                        <p class="value">12.01.2026</p>
+                    </div>
+                </div>
             </section>
 
             <section id="settings" class="tab-section">
