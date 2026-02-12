@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Donor-Flow | Реєстрація</title>
+  <link rel="stylesheet" href="register.css">
+  <link rel="stylesheet" href="./reg.css">
+</head>
+<body>
+
+  <div class="register-wrapper">
+    <h1>Donor-Flow</h1>
+    <p class="subtitle">Створення нового акаунту</p>
+
+    <form class="register-form">
+      <input type="text" placeholder="Імʼя та прізвище" required>
+      <input type="email" placeholder="Електронна пошта" required>
+
+      <div class="password-field">
+        <input type="password" id="password" placeholder="Пароль" required>
+        <span class="toggle" data-target="password">👁</span>
+      </div>
+
+      <div class="password-field">
+        <input type="password" id="confirm" placeholder="Підтвердіть пароль" required>
+        <span class="toggle" data-target="confirm">👁</span>
+      </div>
+
+      <button type="submit">Зареєструватися</button>
+    </form>
+
+    <div class="divider">або</div>
+
+    <button class="google-btn">
+      <img src="https://www.svgrepo.com/show/475656/google-color.svg">
+      Реєстрація через Google
+    </button>
+
+    <p class="footer-text">
+      Вже маєш акаунт? <a href="./index.html">Увійти</a>
+    </p>
+  </div>
+
+<script src="register.js"></script>
+</body>
+</html>

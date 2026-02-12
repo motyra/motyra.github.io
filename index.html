@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./userpage.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <div class="login-wrapper">
+        <h1>Donor-Flow</h1>
+        <p class="subtitle">Вхід до особистого кабінету</p>
+
+        <form class="login-form">
+            <input type="email" placeholder="Електронна пошта" required>
+            <input type="password" placeholder="Пароль" required>
+
+            <a href="./main.html">
+                <button type="submit">Увійти</button>
+            </a>
+        </form>
+
+        <div class="divider">або</div>
+
+        <button class="google-btn">
+            <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="">
+            Увійти через Google
+        </button>
+
+        <p class="footer-text">
+            Немає акаунту? <a href="./reg.html">Зареєструватися</a>
+        </p>
+    </div>
+    </div>
 </body>
+
 </html>

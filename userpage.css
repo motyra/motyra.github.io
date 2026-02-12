@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #7a0000, #b11226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.login-wrapper {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.login-wrapper h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    letter-spacing: -2px;
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-field span {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background: #ffffff;
+    color: #8b0000;
+    font-weight: bold;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-form button:hover {
+    background: #ffeaea;
+}
+
+.divider {
+    margin: 20px 0;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.google-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 999px;
+    border: none;
+    background: #fff;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.google-btn img {
+    width: 18px;
+}
+
+.footer-text {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.footer-text a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
