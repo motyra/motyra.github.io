@@ -112,3 +112,8 @@ body {
     font-weight: bold;
     text-decoration: underline;
 }
+
+a {
+    color: #333;
+    text-decoration: none;
+}
