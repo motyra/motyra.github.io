@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Donor-Flow | Client Area</title>
+    <link rel="stylesheet" href="client.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <button id="toggleSidebar" class="burger">☰</button>
+        <div class="logo"><a href="./main.html">Donor-Flow</a></div>
+        <div class="user">
+            <span id="username">Користувач</span>
+            <button id="logout">Вийти</button>
+        </div>
+    </header>
+    <div class="tabs">
+        <div class="layout">
+            <aside class="sidebar">
+                <button class="tab" data-tab="home">Головна</button>
+                <button class="tab" data-tab="appointments"> Мій запис</button>
+                <button class="tab" data-tab="donations"> Мої донації</button>
+                <button class="tab" data-tab="settings"> Налаштування</button>
+            </aside>
+
+            <!-- tabs content -->
+        </div>
+        <div class="tab-content">
+            <section id="home" class="tab-section active">
+                <h2>Головна</h2>
+                <p>Огляд профілю</p>
+            </section>
+
+            <section id="appointments" class="tab-section">
+                <h2>Мій запис</h2>
+                <p>Заплановані візити</p>
+            </section>
+
+            <section id="donations" class="tab-section">
+                <h2>Мої донації</h2>
+                <p>Історія донацій</p>
+            </section>
+
+            <section id="settings" class="tab-section">
+                <h2>Налаштування</h2>
+                <p>Профіль, сповіщення</p>
+            </section>
+        </div>
+        <main class="content">
+            <h1>Особистий кабінет</h1>
+            <p class="subtitle">Ваша активність та інформація</p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Статус донора</h3>
+                    <p class="value good">Активний</p>
+                </div>
+
+                <div class="card">
+                    <h3>Кількість донацій</h3>
+                    <p class="value">5</p>
+                </div>
+
+                <div class="card">
+                    <h3>Наступна донація</h3>
+                    <p class="value">12.03.2026</p>
+                </div>
+            </div>
+
+            <section class="history">
+                <h2>Останні донації</h2>
+                <ul>
+                    <li>🩸 12.01.2026 — Цільна кров</li>
+                    <li>🩸 10.10.2025 — Плазма</li>
+                    <li>🩸 05.07.2025 — Цільна кров</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+
+</html>
