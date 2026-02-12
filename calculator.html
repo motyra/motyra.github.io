@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor-Flow | Календар Донора</title>
+    <link rel="icon" type="image/png" href="Imgs/Donor-Flow_logo_tab_v.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Анімація крапель -->
+        <div class="blood-drop" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="blood-drop" style="left: 25%; animation-delay: 2s;"></div>
+        <div class="blood-drop" style="left: 40%; animation-delay: 4s;"></div>
+        <div class="blood-drop" style="left: 60%; animation-delay: 1s;"></div>
+        <div class="blood-drop" style="left: 75%; animation-delay: 3s;"></div>
+        <div class="blood-drop" style="left: 90%; animation-delay: 5s;"></div>
+
+        <div class="hero-content">
+            <div class="hero-title"><h1>Donor-Flow |</h1><h2>Календар <br> Донора</h2></div>
+            <p class="hero-subtitle">Ваша донація рятує життя. І ми допоможемо вам не забути зробити це знову.</p>
+            <a href="#calculator" class="cta-button">Розрахувати наступну дату</a>
+        </div>
+    </section>
+
+    <!-- Інформація -->
+    <section class="section">
+        <h2 class="section-title">Типи донації та інша важлива інформація</h2>
+        <div class="donation-info">
+            <div class="donation-info_section">
+                <h1 class="donation-section-title-1">Типи донації</h1>
+                <details class="donation-card">
+                    <summary>Цільна кров</summary>
+                    <div class="wait-time">⏱ Чекати: 60 днів</div>
+                    <p>Найпоширеніший тип донації. Забирається приблизно 450 мл крові, яка потім розділяється на компоненти. Процедура займає 10-15 хвилин.</p>
+                </details>
+
+                <details class="donation-card">
+                    <summary>Плазма</summary>
+                    <div class="wait-time">⏱ Чекати: 14 днів</div>
+                    <p>Донація рідкої частини крові. Використовується для лікування опіків, шоку та інших станів. Процедура займає близько 40 хвилин.</p>
+                </details>
+
+                <details class="donation-card">
+                    <summary>Тромбоцити</summary>
+                    <div class="wait-time">⏱ Чекати: 14 днів</div>
+                    <p>Клітини, що допомагають зупинити кровотечу. Критично важливі для онкохворих. Процедура займає 1-2 години.</p>
+                </details>
+
+                <details class="donation-card">
+                    <summary>Еритроцити</summary>
+                    <div class="wait-time">⏱ Чекати: 120 днів</div>
+                    <p>Подвійна донація червоних кров'яних тілець. Допомагає пацієнтам з анемією та крововтратою. Процедура займає 30-40 хвилин.</p>
+                </details>
+            </div>
+            
+            <div class="donation-info_section">
+                <h1 class="donation-section-title-3">Здоров'я  та безпека донора</h1>
+                <details class="donation-card">
+                    <summary>Безпека для здоров'я</summary>
+                    <p>Сучасне донорство є абсолютно безпечним. Усі інструменти — голки, системи, контейнери — є одноразовими та стерильними. Ризик зараження під час процедури дорівнює нулю.</p>
+                </details>
+
+                <details class="donation-card">
+                    <summary>Підготовка до донації</summary>
+                    <p>За 48 годин не можна вживати алкоголь, за 24 години — жирну, смажену їжу та молочні продукти. Зранку обов'язковий легкий сніданок. Порушення дієти призводить до «хільозу» — стану, коли кров стає непридатною для переливання.</p>
+                </details>
+                
+                <details class="donation-card">
+                    <summary>Абсолютні протипоказання</summary>
+                    <p>Існують діагнози, при яких не можна бути донором ніколи. Це ВІЛ, гепатити, онкологічні захворювання, цукровий діабет та серйозні вади серця. Ці обмеження існують для захисту як реципієнта, так і самого потенційного донора.</p>
+                </details>
+            </div>
+
+            <div class="donation-info_section">
+                <h3 class="donation-section-title-3">Плюси донорства</h3>
+                <details class="donation-card">
+                    <summary>Користь для донора</summary>
+                    <p>Регулярне донорство знижує ризик серцево-судинних захворювань та стимулює оновлення клітин крові. Організм донора стає більш стійким до крововтрат у разі травм. Також це безкоштовний спосіб регулярно перевіряти стан свого здоров'я..</p>
+                </details>
+                <details class="donation-card">
+                    <summary>Пільги та соціальна відповідальність</summary>
+                    <p>Донори мають право на звільнення від роботи/навчання в день донації та додатковий день відпочинку. Але головна мотивація — це внесок у національну безпеку, особливо під час воєнного стану, коли потреба в крові зростає в рази.</p>
+                </details>
+            </div>
+
+            <div class="donation-info_section">
+                <h1 class="donation-section-title-2">Інші важливі аспекти</h1>
+                <details class="donation-card">
+                        <summary>Регулярність — це важливо</summary>
+                        <p>Кров має обмежений термін придатності. Тому центрам крові потрібні не «разові акції», а регулярні донори, які забезпечують стабільний запас для планових операцій та пологів.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator -->
+    <section class="section" id="calculator">
+        <div class="calculator">
+            <h3>Розрахуй наступну дату донації</h3>
+            
+            <div class="form-group">
+                <label for="donationType">Тип донації:</label>
+                <select id="donationType" class="donation-type-select">
+                    <option value="60">Цільна кров </option>
+                    <option value="14">Плазма </option>
+                    <option value="14-platelets">Тромбоцити </option>
+                    <option value="120">Еритроцити </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="lastDonation">Дата останньої донації:</label>
+                <input type="date" id="lastDonation" max="">
+            </div>
+
+            <button class="calculate-btn" onclick="calculateNextDate()">Розрахувати</button>
+
+            <div class="result" id="result">
+                <h4>📅 Твоя наступна донація</h4>
+                <div class="next-date" id="nextDate"></div>
+                <p id="resultMessage"></p>
+    
+                <button id="addToCalendarBtn" class="calendar-btn">
+                    Додати в Google Календар
+                </button>
+
+                <a style="margin-top: 20px; font-style: italic;">💡Як підготуватись?</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Centers -->
+    <section class="centers-section">
+        <div class="section">
+            <h2 class="section-title">Центри донації поблизу</h2>
+            
+            <div class="map-placeholder">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d85259.35105238578!2d11.511642823079768!3d48.103392592095354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sblutspende!5e0!3m2!1sen!2sde!4v1770747744980!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+            </div>
+
+            <div class="centers-grid">
+                <div class="center-card">
+                    <h4>Київський центр крові</h4>
+                    <div class="address">📍 вул. Берлінського, 12, Київ</div>
+                    <div class="phone">📞 +380 44 123 4567</div>
+                    <div class="hours">
+                        <strong>Години роботи:</strong><br>
+                        Пн-Пт: 08:00 - 15:00<br>
+                        Сб: 08:00 - 13:00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Разом ми рятуємо життя</h3>
+        <p>Кожна донація може врятувати до трьох життів</p>
+
+        <div class="footer-stats">
+            <div class="stat">
+                <span class="stat-number">1</span>
+                <div class="stat-label">донація = 3 життя</div>
+            </div>
+            <div class="stat">
+                <span class="stat-number">450</span>
+                <div class="stat-label">мл крові за раз</div>
+            </div>
+            <div class="stat">
+                <span class="stat-number">24</span>
+                <div class="stat-label">години до використання</div>
+            </div>
+        </div>
+
+        <p style="margin-top: 40px; opacity: 0.6;">© 2026 Календар Донора. Створено з ❤️ для донорів</p>
+    </footer>
+    <script>
+          // Універсальний плавний скрол
+         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+    </script>
+</body>
+</html>
