@@ -30,6 +30,13 @@ body {
     .tab {
         white-space: nowrap;
     }
+    
+    .tab.active,
+    .tab:hover {
+        transform: translateX(10px);
+        transition: 0.3s ease;
+        background: rgba(255, 255, 255, 0.938);
+    }
 }
 
 
