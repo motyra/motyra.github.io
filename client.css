@@ -1,6 +1,17 @@
+:root {
+            --blood-red: #C41E3A;
+            --deep-red: #8B0000;
+            --transparent-blood-red: #c41e3a63;
+            --transparent-deep-red: #8b000070;
+            --warm-cream: #FFF8F0;
+            --soft-peach: #FFE5D9;
+            --dark-charcoal: #2C2C2C;
+            --light-gray: #F5F5F5;
+            --accent-gold: #D4AF37;
+        }
+
 * {
     box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
 }
 
 body {
@@ -8,6 +19,7 @@ body {
     min-height: 100vh;
     background: linear-gradient(135deg, #7a0000, #b11226);
     color: #fff;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -28,15 +40,17 @@ body {
     }
 
     .tab {
-        white-space: nowrap;
+        padding: 8px 10px;
+        transform: none;
     }
-    
+
     .tab.active,
     .tab:hover {
         transform: translateX(10px);
         transition: 0.3s ease;
         background: rgba(255, 255, 255, 0.938);
     }
+
 }
 
 
@@ -62,6 +76,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: #0000004f 0 0 10px;
 }
 
 nav {
@@ -74,8 +91,7 @@ nav {
     min-height: 60px;
     width: 100%;
     z-index: 1;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
+    background-color: var(--deep-red);
     padding: 20px 50px;
     box-shadow: rgba(0, 0, 0, 0.39) 0 0 10px;
 }
@@ -105,33 +121,6 @@ nav {
 /* Layout */
 .layout {
     display: flex;
-}
-
-.sidebar {
-    width: 240px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(10px);
-    flex-shrink: 0;
-}
-
-.sidebar nav {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-
-.sidebar a {
-    padding: 12px 14px;
-    border-radius: 10px;
-    cursor: pointer;
-    opacity: 0.9;
-}
-
-.sidebar a:hover,
-.sidebar a.active {
-    background: rgba(255, 255, 255, 0.2);
 }
 
 /* Content */
@@ -210,14 +199,11 @@ a {
 }
 
 .tab {
-    padding: 12px 16px;
     border: none;
     background: var(--blood-red);
     color: #000000;
     cursor: pointer;
     border-radius: 10px;
-    box-shadow: #0000003d 0 0 10px;
-    margin-right: 30px;
 }
 
 @media (hover:hover) {
